@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/pfista/scripts'
+let g:netrw_dirhist_2='/Users/pfista/.vim'
+let g:netrw_dirhist_3='/Users/pfista/Sites/Portfolio'
+let g:netrw_dirhist_4='/Users/pfista/.vim'
+let g:netrw_dirhist_5='/Users/pfista/.tor'
+let g:netrw_dirhist_6='/Users/pfista/School/CS429/hello.dSYM'
+let g:netrw_dirhist_7='/Users/pfista/Sites/jquery-backstretch'
+let g:netrw_dirhist_8='/Users/pfista/School/CS429/comparch/.git'
+let g:netrw_dirhist_9='/Users/pfista/.vim'
