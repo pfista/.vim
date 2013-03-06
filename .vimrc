@@ -55,7 +55,7 @@ inoremap <C-Z> <ESC>
 " autosave when window loses focus au FocusLost * :wa
 
 set nu
-set backupdir=~/.vim/backups
+set backupdir=~/.vim/backup
 
 "Colorscheme
 "colorscheme cloudMidnight
