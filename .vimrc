@@ -4,7 +4,6 @@ call pathogen#infect()
 filetype plugin indent on
 filetype plugin on
 
-
 set nocompatible
 set modelines=0
 
