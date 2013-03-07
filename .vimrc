@@ -38,7 +38,6 @@ set noswapfile
 set nobackup
 nnoremap <leader><space> :noh<cr> #this clears out a search to get rid of highlighting once you have found what you are looking for
 
-
 " remap escape key
 imap sdf <Esc>
 
