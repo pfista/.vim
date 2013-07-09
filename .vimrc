@@ -1,12 +1,21 @@
-"filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-filetype plugin indent on
-filetype plugin on
-
 set nocompatible
-set modelines=0
+filetype off
+filetype plugin indent on
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"Required for Vundle
+Bundle 'gmarik/vundle'
+
+" All my bundles
+Bundle 'vim-scripts/DoxygenToolkit.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'jistr/vim-nerdtree-tabs'
+
+set modelines=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -42,16 +51,15 @@ imap sdf <Esc>
 
 " handle long lines correctly
 set wrap
-set textwidth=79
+set textwidth=80
 "set formatoptions=qrn1
-set colorcolumn=85
+set colorcolumn=81
 
 " make ; map to : so its quicker to save files
 nnoremap ; :
 inoremap <C-Z> <ESC>
 
 " autosave when window loses focus au FocusLost * :wa
-
 set nu
 set backupdir=~/.vim/backup
 
@@ -79,4 +87,8 @@ augroup myvimrc
     au!
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
 augroup END
+
+" Saves folds and cursor position when saving or exiting vim
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
 
