@@ -16,6 +16,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/powerline'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+Bundle 'Lokaltog/vim-easymotion'
 
 set modelines=0
 set tabstop=4
@@ -46,7 +47,9 @@ set showmatch
 set hlsearch
 set noswapfile
 set nobackup
-nnoremap <leader><space> :noh<cr> #this clears out a search to get rid of highlighting once you have found what you are looking for
+
+"this clears out a search to get rid of highlighting once you have found what you are looking for
+nnoremap <leader><space> :noh<cr> 
 
 " remap escape key
 imap sdf <Esc>
