@@ -14,9 +14,9 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/powerline'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'davidhalter/jedi-vim'
+Bundle 'bling/vim-airline'
 
 set modelines=0
 set tabstop=4
