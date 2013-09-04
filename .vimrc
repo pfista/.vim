@@ -17,6 +17,8 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'bling/vim-airline'
+let g:airline_theme = 'base16'
+set noshowmode
 
 set modelines=0
 set tabstop=4
@@ -26,18 +28,17 @@ set expandtab
 set encoding=utf-8
 set scrolloff=3
 set autoindent
-set showmode
 set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
-"set cursorline
+set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+set number
 
 "set undofile -creates a file when you edit that allows undoing after closing the file <FILENAME>.un~
 set ignorecase
@@ -69,7 +70,6 @@ set nu
 set backupdir=~/.vim/backup
 
 "Colorscheme
-"colorscheme cloudMidnight
 colorscheme molokai
 syntax on
 
