@@ -16,9 +16,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'davidhalter/jedi-vim'
-Bundle 'bling/vim-airline'
-let g:airline_theme = 'base16'
-set noshowmode
+"set noshowmode
+Bundle 'Floobits/floobits-vim'
+Bundle 'chriskempson/base16-vim'
 
 set modelines=0
 set tabstop=4
@@ -71,6 +71,8 @@ set backupdir=~/.vim/backup
 
 "Colorscheme
 colorscheme molokai
+"colorscheme base16-eighties
+set background=light
 syntax on
 
 " Make NERDTree close when vim when its the only window open
