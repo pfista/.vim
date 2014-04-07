@@ -17,8 +17,8 @@ Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'davidhalter/jedi-vim'
 "set noshowmode
-Bundle 'Floobits/floobits-vim'
 Bundle 'chriskempson/base16-vim'
+Bundle 'altercation/vim-colors-solarized'
 
 set modelines=0
 set tabstop=4
@@ -70,10 +70,12 @@ set nu
 set backupdir=~/.vim/backup
 
 "Colorscheme
-colorscheme molokai
-"colorscheme base16-eighties
-set background=light
 syntax on
+syntax enable
+colorscheme solarized
+
+" Toggle between dark and light backgrounds
+map <leader>x :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
 " Make NERDTree close when vim when its the only window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
