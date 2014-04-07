@@ -49,6 +49,12 @@ set hlsearch
 set noswapfile
 set nobackup
 
+" Disable arrow keys :)
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 "this clears out a search to get rid of highlighting once you have found what you are looking for
 nnoremap <leader><space> :noh<cr> 
 
