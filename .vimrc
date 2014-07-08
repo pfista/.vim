@@ -19,6 +19,16 @@ Bundle 'davidhalter/jedi-vim'
 "set noshowmode
 Bundle 'chriskempson/base16-vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'mustache/vim-mustache-handlebars'
+
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+let g:airline_inactive_collapse=1
+let g:airline_detect_paste=1
+let g:airline_theme='powerlineish'
+
+"Force markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 set modelines=0
 set tabstop=4
@@ -78,7 +88,7 @@ set backupdir=~/.vim/backup
 "Colorscheme
 syntax on
 syntax enable
-colorscheme solarized
+colorscheme molokai 
 
 " Toggle between dark and light backgrounds
 map <leader>x :let &background = ( &background == "dark"? "light" : "dark" )<CR>
