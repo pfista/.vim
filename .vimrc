@@ -16,12 +16,14 @@ Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'davidhalter/jedi-vim'
-"set noshowmode
 Bundle 'chriskempson/base16-vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'esneider/YUNOcommit.vim'
+let g:YUNOcommit_after = 20
 
 Bundle 'bling/vim-airline'
+set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline_inactive_collapse=1
 let g:airline_detect_paste=1
@@ -116,4 +118,3 @@ augroup END
 " Saves folds and cursor position when saving or exiting vim
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
-
