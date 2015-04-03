@@ -1,9 +1,6 @@
-set nocompatible
-filetype off
-filetype plugin indent on
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+set nocompatible
 
 "Required for Vundle
 Bundle 'gmarik/vundle'
@@ -28,6 +25,9 @@ let g:airline_powerline_fonts = 1
 let g:airline_inactive_collapse=1
 let g:airline_detect_paste=1
 let g:airline_theme='powerlineish'
+
+filetype on
+filetype plugin indent on
 
 "Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
