@@ -1,41 +1,45 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-set nocompatible
+set nocompatible " be iMproved
+filetype off " required
 
-"Required for Vundle
-Bundle 'gmarik/vundle'
+"Required for Vundle setup
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim' " Let vundle manage itself
 
 " All my bundles
-Bundle 'vim-scripts/DoxygenToolkit.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'chriskempson/base16-vim'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'esneider/YUNOcommit.vim'
+Plugin 'bling/vim-airline'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set noshowmode
+
 let g:YUNOcommit_after = 20
 
-Bundle 'bling/vim-airline'
-set noshowmode
 let g:airline_powerline_fonts = 1
 let g:airline_inactive_collapse=1
 let g:airline_detect_paste=1
 let g:airline_theme='powerlineish'
 
-filetype on
-filetype plugin indent on
-
 "Force markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 set modelines=0
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set encoding=utf-8
 set scrolloff=3
