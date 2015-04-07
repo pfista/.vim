@@ -76,6 +76,7 @@ nnoremap <leader><space> :noh<cr>
 
 " remap escape key
 imap sdf <Esc>
+vmap sdf <Esc>  " escape in visual mode
 
 " handle long lines correctly
 set wrap
@@ -86,6 +87,7 @@ set colorcolumn=81
 " make ; map to : so its quicker to save files
 nnoremap ; :
 inoremap <C-Z> <ESC>
+vnoremap <C-Z> <ESC>
 
 " autosave when window loses focus au FocusLost * :wa
 set nu
