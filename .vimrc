@@ -86,8 +86,8 @@ set colorcolumn=81
 
 " make ; map to : so its quicker to save files
 nnoremap ; :
-inoremap <C-Z> <ESC>
-vnoremap <C-Z> <ESC>
+inoremap <C-Z> <Esc>
+vnoremap <C-Z> <Esc>
 
 " autosave when window loses focus au FocusLost * :wa
 set nu
