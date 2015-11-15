@@ -99,7 +99,18 @@ syntax enable
 colorscheme molokai 
 
 " Toggle between dark and light backgrounds
-map <leader>x :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+
+function! ToggleDayNight()
+    if &background=="dark"
+				colorscheme solarized
+				let &background="light"
+    else
+				colorscheme molokai
+				let &background="dark"
+    endif
+endfunction
+
+nnoremap <leader>x :call ToggleDayNight()<CR>
 
 " Make NERDTree close when vim when its the only window open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
